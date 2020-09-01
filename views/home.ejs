@@ -6,8 +6,8 @@
 <p><%= firstBlog%></p>
 
 <% Posts.forEach( (post) => { %>
-   <h1><%= post.title %></h1>
-    <p><%= post.body.substring(0, 100) + "..."%><a href="/<%= post.title %>">Read More!</a></p>
+   <h1><%= post.name %></h1>
+    <p><%= post.body.substring(0, 100) + "..."%><a href="/<%= post.name %>">Read More!</a></p>
 <%})%>
 
 <%- include("partials/footer"); -%>
