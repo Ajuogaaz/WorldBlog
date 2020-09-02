@@ -15,7 +15,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-const url = 'mongodb://127.0.0.1:27017/world-blog'
+const url = "mongodb+srv://okoth:nairobi@cluster0.ostnc.azure.mongodb.net/world-blog"
 //mongoose.connect("mongodb+srv://admin-linus:Test123@cluster0.auhfn.azure.mongodb.net/todolistDB", { useNewUrlParser: true,  useUnifiedTopology: true });
 mongoose.connect(url, { useNewUrlParser: true,  useUnifiedTopology: true });
 
